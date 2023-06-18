@@ -13,12 +13,13 @@ class ProgressBar extends React.Component {
 
     render() {
         const {
-            toDoWidth, inProgressWidth, doneWidth,
-            toDoColor, inProgressColor, doneColor,
+            toDoWidth, inProgressWidth, ownerReviewWidth, doneWidth,
+            toDoColor, inProgressColor, ownerReviewColor, doneColor,
             showBorder
         } = this.props;
         const toDoDisplay = toDoWidth > 0 ? 'inline-block' : 'none';
         const inProgressDisplay = inProgressWidth > 0 ? 'inline-block' : 'none';
+        const ownerReviewDisplay = ownerReviewWidth > 0 ? 'inline-block' : 'none';
         const doneDisplay = doneWidth > 0 ? 'inline-block' : 'none';
         const border = showBorder ? '2px solid rgb(230,68,65)' : '0 solid rgb(230,68,65)';
 
@@ -26,6 +27,7 @@ class ProgressBar extends React.Component {
           <div style={{width: '96%', height: 20, margin: 0, padding: 0, border: border}}>
             <div style={{backgroundColor: toDoColor, width: toDoWidth + '%', height: '100%', display: toDoDisplay, float: 'left', margin: 0, padding: 0 }}>&nbsp;</div>
             <div style={{backgroundColor: inProgressColor, width: inProgressWidth + '%', height: '100%', display: inProgressDisplay, float: 'left', margin: 0, padding: 0}}>&nbsp;</div>
+            <div style={{backgroundColor: ownerReviewColor, width: ownerReviewWidth + '%', height: '100%', display: ownerReviewDisplay, float: 'left', margin: 0, padding: 0}}>&nbsp;</div>
             <div style={{backgroundColor: doneColor, width: doneWidth + '%', height: '100%', display: doneDisplay, float: 'left', margin: 0, padding: 0}}>&nbsp;</div>
           </div>
         );
