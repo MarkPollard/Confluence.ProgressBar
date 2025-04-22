@@ -5,7 +5,7 @@ modules:
       resolver:
         function: resolver
       title: Progress Bar
-      description: A Confluence progress bar used visually show how complete something is.
+      description: A Confluence progress bar used to visually show how complete something is.
       config:
         function: config-progress
   function:
