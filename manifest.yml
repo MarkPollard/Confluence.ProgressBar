@@ -1,11 +1,11 @@
 modules:
   macro:
-    - key: alprogressbar
+    - key: progressbar
       resource: main
       resolver:
         function: resolver
       title: Progress Bar
-      description: A Progress Bar used by the Abstraction Layer
+      description: A Confluence progress bar used visually show how complete something is.
       config:
         function: config-progress
   function:
@@ -17,4 +17,6 @@ resources:
   - key: main
     path: static/progressbar/build
 app:
+  runtime:
+    name: nodejs22.x
   id: ari:cloud:ecosystem::app/af7d2e5e-1e4f-4b1f-9266-da1f367bec74

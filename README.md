@@ -25,14 +25,24 @@ npm install
 npm run build
 ```
 
+- Login to Atlasian
+```
+forge login
+```
+? Enter your email: xxx@xxx.com
+Next, enter your Atlassian API token. If you don't have a token, visit this URL to create one:
+https://id.atlassian.com/manage/api-tokens
+? Enter your Atlassian API token: [hidden]
+√ Logged in as xxx.
+
 - Deploy your app by running:
 ```
-forge deploy
+forge deploy -e production
 ```
 
 - Install your app in an Atlassian site by running:
 ```
-forge install
+forge install -e production
 ```
 
 ### Notes
