@@ -29,11 +29,11 @@ npm run build
 ```
 forge login
 ```
-? Enter your email: xxx@xxx.com
-Next, enter your Atlassian API token. If you don't have a token, visit this URL to create one:
-https://id.atlassian.com/manage/api-tokens
-? Enter your Atlassian API token: [hidden]
-√ Logged in as xxx.
+? Enter your email: xxx@xxx.com  
+Next, enter your Atlassian API token. If you don't have a token, visit this URL to create one:  
+https://id.atlassian.com/manage/api-tokens  
+? Enter your Atlassian API token: [hidden]  
+√ Logged in as xxx.  
 
 - Deploy your app by running:
 ```
